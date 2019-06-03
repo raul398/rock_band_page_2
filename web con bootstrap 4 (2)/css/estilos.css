@@ -1,0 +1,165 @@
+
+
+/* -------------- ACA SE ENCUENTRA TODO LO REFERIDO AL INDEX ------------------------- */
+
+/* CONTENIDO MOVIL DEL INDEX */
+
+#body-index{
+	background-image:url(../img/evolution.jpg);
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	background-attachment:cover;
+}
+
+
+/* FOOTER */
+
+footer{
+	background:black;
+}
+
+
+/* CAJAS VACIAS DEL INDEX */
+
+.div{
+	width: 100%;
+	height: 100px;
+}
+
+/* CAJA CON CONTENIDO DEL INDEX */
+
+#div-content{
+	background-color: black;
+	width: 100%;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-direction: column;
+}
+
+
+
+
+
+/* ---------------------------- ACA SE ENCUENTRA TODO LO REFERIDO A EL LINK 1 ----------------------------------- */
+
+
+/* LINEA HORIZONTAL DE COLOR PARA DECORAR LINK 1, 2, 3 */
+
+hr{
+	height:3px;
+	background-color: red;
+}
+
+/* FONDO DE SECTION LINK 1, 2 Y 3 */
+
+.section{
+	background:black;
+}
+
+.redes img{
+	position: relative;
+	text-align: center;
+
+}
+
+/* ---------------------- GALERIA DE FOTOS (LIGHTBOX) CONTENIDO DE LINK 2 ------------------------------------------------- */
+
+/* ESTILOS DE LAS IMAGENES */
+
+.img{
+	display: block;
+	max-width: 100%;
+}
+
+/* CLASE QUE INDICA ESTILOS DE LA GALERIA */
+
+.galeria{
+	padding: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	list-style: none;
+}
+
+/* CLASE QUE INDICA ESTILOS DE LOS ITEM DE LA GALERIA */
+
+.galeria__item{
+	width: 80%;
+	cursor: pointer;
+}
+
+/* CSS PARA ADAPTAR ITEM DE GALERIA */
+
+
+/* ancho minimo de 480px */
+@media (min-width: 480px) {
+	.galeria__item{
+		width: 47%;
+		margin: 5px;
+	}
+}
+
+/* ancho minimo de 768px */
+@media (min-width: 768px) {
+	.galeria__item{
+		width: 33%;
+	}
+}
+
+/* ancho minimo de 1024px */
+@media (min-width: 1024px) {
+	.galeria__item{
+		width: 20%;
+		margin: 15px;
+	}
+}
+
+
+/* CSS PARA ESTILOS DEL MODAL */
+
+
+/* Clase que indica estilo del modal */
+.modal{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.7);
+	top: 0;
+	left: 0;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Clase que indica el estilo del img del modal */
+
+.modal__img{
+	width: 90%;
+	max-width: 700px;
+}
+
+/* CSS para estilo del boton del modal */
+
+.modal__boton{
+	width: 50px;
+	height: 50px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 25px;
+	font-family: monospace;
+	line-height: 50px;
+	text-align: center;
+	background: red;
+	border-radius: 50%;
+	cursor: pointer;
+
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+
+
+
